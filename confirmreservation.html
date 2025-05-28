@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Confirm Reservation</title>
+  <link rel="stylesheet" href="confirmreservation.css">
+</head>
+<body>
+  <div class="container confirmation-box">
+    <h1>Confirm Reservation</h1>
+    <p>Are you sure you want to reserve this product?</p>
+
+    <div class="confirmation-buttons">
+      <button class="cancel" onclick="window.history.back()">Cancel</button>
+      <button class="confirm" onclick="confirmReservation()">Yes, Reserve</button>
+    </div>
+  </div>
+
+  <script>
+    function confirmReservation() {
+      alert("Your product has been reserved successfully!");
+      // Replace below line with real action or redirect if needed
+      window.location.href = "reserveproduct.html";
+    }
+  </script>
+</body>
+</html>
