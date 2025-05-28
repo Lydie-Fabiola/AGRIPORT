@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Favorites</title>
+  <link rel="stylesheet" href="favorite.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>My Favorites</h1>
+    
+    <div class="tabs">
+      <button id="productsTab" class="tab-button active">Favorite Products</button>
+      <button id="farmersTab" class="tab-button">Favorite Farmers</button>
+    </div>
+    
+    <div id="productsContent" class="tab-content active">
+      <div class="horizontal-scroll">
+        <div class="product-card">
+          <div class="product-image-box">
+            <img src="https://via.placeholder.com/150x120?text=Tomatoes" alt="Organic Tomatoes" />
+          </div>
+          <div class="product-info">
+            <h3>Organic Tomatoes</h3>
+            <p class="farm-name">Kwame Organic Farms</p>
+            <p class="price">FCFA 25/kg</p>
+            <p class="harvest-info">Harvested Today</p>
+            <button class="reserve-btn">Reserve</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image-box">
+            <img src="https://via.placeholder.com/150x120?text=Cassava" alt="Fresh Cassava" />
+          </div>
+          <div class="product-info">
+            <h3>Fresh Cassava</h3>
+            <p class="farm-name">Akosua's Fresh Produce</p>
+            <p class="price">FCFA 15/kg</p>
+            <p class="harvest-info">Harvested Yesterday</p>
+            <button class="reserve-btn">Reserve</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="farmersContent" class="tab-content">
+      <div class="horizontal-scroll">
+        <div class="farmer-card">
+          <div class="farmer-image-circle">
+            <img src="https://via.placeholder.com/120?text=Kwame" alt="Kwame Organic Farms" />
+          </div>
+          <div class="farmer-info">
+            <h3>Kwame Organic Farms</h3>
+            <p>Location: Kumasi, Ghana</p>
+            <p>Specializes in organic vegetables and fruits.</p>
+            <button class="contact-btn">Contact Farmer</button>
+          </div>
+        </div>
+
+        <div class="farmer-card">
+          <div class="farmer-image-circle">
+            <img src="https://via.placeholder.com/120?text=Akosua" alt="Akosua's Fresh Produce" />
+          </div>
+          <div class="farmer-info">
+            <h3>Akosua's Fresh Produce</h3>
+            <p>Location: Accra, Ghana</p>
+            <p>Known for fresh cassava and root vegetables.</p>
+            <button class="contact-btn">Contact Farmer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="favorite.js"></script>
+</body>
+</html>
