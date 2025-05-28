@@ -1,0 +1,105 @@
+ 
+ body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+
+  /* ✅ Use only the filename since it's in the same folder */
+  background-image: url('child\ in\ farm.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+}
+
+.login-container {
+  text-align: center;
+  color: #2f4f21;
+}
+
+.login-container h1 {
+  font-size: 2.5em;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  color: #7b5d2c;
+  margin-bottom: 20px;
+  font-size: 1.1em;
+}
+
+.login-box {
+  /* ✅ Slight transparency for readability */
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  padding: 30px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.login-box h2 {
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  background: #f9f6f2;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  padding: 10px 15px;
+}
+
+.input-group input {
+  border: none;
+  background: none;
+  outline: none;
+  flex: 1;
+  font-size: 1em;
+  margin-left: 10px;
+}
+
+.icon, .toggle-password {
+  font-size: 1.2em;
+  color: #888;
+}
+
+.login-btn {
+  background: #467c1f;
+  color: white;
+  font-size: 1em;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.login-btn:hover {
+  background: #35610e;
+}
+
+.links {
+  margin-top: 15px;
+  font-size: 0.95em;
+}
+
+.links a {
+  color: #467c1f;
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
