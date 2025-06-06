@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="admindashboard.css" />
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2><span class="">Admin</span> <span class="">Portal</span></h2>
+      <nav>
+        <a href="#" class="nav-item active">🏠 Dashboard</a>
+        <a href="farmermanagement.html" class="nav-item">👨‍🌾FarmerManagement</a>
+        <a href="buyermanagement.html" class="nav-item">🧑‍💼BuyerManagement</a>
+         <a href="adminmanagement.html" class="nav-item">🛠 Admin Management</a>
+        <a href="productmanagement.html" class="nav-item">📦 Product Listings</a>
+        <a href="transactionmanagement.html" class="nav-item">💲 Transactions</a>
+        
+    
+        <a href="#" class="nav-item logout"> Log Out</a>
+      </nav>
+    </aside>
+
+    <main class="dashboard">
+      <h1>Dashboard Overview</h1>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Total Farmers</h3>
+          <p class="count">125</p>
+          
+        </div>
+        <div class="card">
+          <h3>Total Buyers</h3>
+          <p class="count">358</p>
+          
+        </div>
+        <div class="card">
+          <h3>Active Listings</h3>
+          <p class="count">289</p>
+          
+        </div>
+        <div class="card">
+          <h3>Transactions</h3>
+          <p class="count">14,325FCFA</p>
+          <p class="sub">+8% from last month</p>
+        </div>
+      </div>
+
+      <div class="bottom-section">
+        <div class="recent-activities">
+          <h3>Recent Activities</h3>
+          <ul>
+            <li><span class="dot green"></span> New farmer registered – John Doe <span class="time">2h ago</span></li>
+            <li><span class="dot blue"></span> New product listing – Organic <span class="time">3h ago</span></li>
+          </ul>
+        </div>
+
+       <div class="pending-actions">
+  <h3>Pending Actions</h3>
+  <a href="farmermanagement.html" style="text-decoration: none;">
+    <div class="alert">
+      5 Farmer Verifications Pending <br>
+      ID and mobile money verification needed
+    </div>
+  </a>
+</div>
+
+      </div>
+    </main>
+  </div>
+</body>
+</html>
