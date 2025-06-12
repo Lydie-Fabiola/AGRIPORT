@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Fresh Produce</title>
+    <link rel="stylesheet" href="addproduct.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Add Fresh Produce</h1>
+        <p class="subtitle">List a new product for sale</p>
+
+        <form id="addProductForm">
+            <label for="productName">Product Name</label>
+            <input type="text" id="productName" name="productName" placeholder="e.g. Tomatoes" required>
+
+            <div class="row">
+                <div class="column">
+                    <label for="quantity">Quantity</label>
+                    <input type="text" id="quantity" name="quantity" placeholder="e.g. 50 kg" required>
+                </div>
+                <div class="column">
+                    <label for="price">Price (CFA)</label>
+                    <input type="text" id="price" name="price" placeholder="e.g. 200" required>
+                </div>
+            </div>
+
+            <label for="category">Category</label>
+            <input type="text" id="category" name="category" placeholder="e.g. Vegetables" required>
+
+            <label for="location">Pickup Location</label>
+            <input type="text" id="location" name="location" placeholder="e.g. Accra Main Market" required>
+
+            <label for="description">Description</label>
+            <textarea id="description" name="description" placeholder="Product description" rows="4" required></textarea>
+
+            <label for="productImage">Product Image</label>
+            <input type="file" id="productImage" name="productImage" accept="image/*" required>
+
+            <button type="submit">Save Product</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('addProductForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert("Product saved successfully!");
+            // Add your actual form handling logic here
+        });
+    </script>
+</body>
+</html>
