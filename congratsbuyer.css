@@ -9,6 +9,17 @@ body {
   align-items: center;
   min-height: 100vh;
   padding: 20px;
+
+  background-image: url('buyer.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center
 }
 
 .container {
