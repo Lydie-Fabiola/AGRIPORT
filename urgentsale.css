@@ -1,0 +1,118 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #4CAF50; /* Apple Green */
+    margin-bottom: 10px;
+  }
+  
+  .intro {
+    text-align: center;
+    color: #555;
+    margin-bottom: 30px;
+    font-size: 14px;
+  }
+  
+  .product-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 25px;
+    background: #fcfffc;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  .date-badge {
+    font-size: 14px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    display: inline-block;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .image-box {
+  width: 100%;
+  height: 200px; /* You can adjust height */
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+}
+
+  
+  .product-card h2 {
+    color: #333;
+    margin: 5px 0;
+  }
+  
+  .farmer {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .price {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  
+  .price .old {
+    text-decoration: line-through;
+    color: #999;
+    margin-right: 10px;
+  }
+  
+  .price .new {
+    color: #4CAF50;
+    font-weight: bold;
+  }
+  
+  .note {
+    font-style: italic;
+    color: #777;
+    margin-bottom: 15px;
+  }
+  
+  .actions {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .actions .buy {
+    width: 50%;
+    padding: 10px;
+    border-radius: 12px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    background-color: #4CAF50;
+    color: white;
+  }
+  
