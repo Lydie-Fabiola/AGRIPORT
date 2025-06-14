@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up as a Buyer</title>
+  <link rel="stylesheet" href="signupbuyer.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Sign Up as a Buyer</h1>
+
+    <form onsubmit="event.preventDefault(); location.href='congratsbuyer.html';">
+      <h2>Personal Info</h2>
+
+      <div class="row-group">
+        <input type="text" class="form-input" placeholder="First Name" required />
+        <input type="text" class="form-input" placeholder="Last Name" required />
+      </div>
+
+      <input type="text" class="form-input" placeholder="Phone Number" required />
+      <input type="email" class="form-input" placeholder="Email Address" required />
+      <input type="text" class="form-input" placeholder="Location / City" required />
+
+      <button type="submit" class="submit-btn">Create Buyer Account</button>
+
+      <p class="note">You’ll receive a confirmation once your account is created.</p>
+    </form>
+  </div>
+</body>
+</html>
