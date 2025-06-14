@@ -3,91 +3,95 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>FARM2MARKET Buyer Dashboard</title>
+  <title>AGRIPORT Buyer Dashboard</title>
   <link rel="stylesheet" href="buyerdashboard.css" />
 </head>
 <body>
   <header class="header">
-  <div class="welcome-box">
-    <h1>Welcome, Buyer John! 👋</h1>
-    <p>We’re glad to see you today on FARM2MARKET 🌿</p>
-  </div>
+    <div class="welcome-box">
+      <h1>Welcome, Buyer Rosyyy! 👋</h1>
+      <p>We’re glad to see you today on AGRIPORT 🌿</p>
+    </div>
+  </header>
+
   <div class="dashboard-container">
     <aside class="sidebar">
       <div class="logo-section">
         <div class="logo-icon">🟢</div>
         <div>
-          <h1 class="logo-text">FARM2MARKET</h1>
+          <h1 class="logo-text">AGRIPORT</h1>
           <p class="subtext">Buyer Dashboard</p>
         </div>
       </div>
       <nav class="nav-links">
-        <a href="#" class="nav-item active">🔍 Search Marketplace</a>
-        <a href="urgentsale.html" class="nav-item">⚡Urgent Sales</a>
-        <a href="browsefarmer.html" class="nav-item">👨‍🌾Browse Farmers</a>
-        <a href="reserveproduct.html" class="nav-item">📅Reservations</a>
-        <a href="buyerchat.html" class="nav-item">💬Chat with Farmers</a>
-        <a href="favorite.html" class="nav-item">❤️Favorites</a>
-        <a href="purchasehistory.html" class="nav-item">🕓Purchase History</a>
-        <a href="#" class="nav-item">🔔Notifications</a>
+        <a href="#" class="nav-item active" onclick="showDashboard(this)">🔍 Search Marketplace</a>
+        <a href="#" class="nav-item" onclick="loadPage('urgentsale.html', this)">⚡ Urgent Sales</a>
+        <a href="#" class="nav-item" onclick="loadPage('reserveproduct.html', this)">📅 Purchase</a>
+        <a href="#" class="nav-item" onclick="loadPage('purchasehistory.html', this)">🕓 Purchase History</a>
+        <a href="#" class="nav-item" onclick="loadPage('buyerchat.html', this)">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon" />
+          Chat with Farmers
+        </a>
+        <a href="#" class="nav-item" onclick="loadPage('favorite.html', this)">❤️ Favorites</a>
+       <!-- <a href="#" class="nav-item" onclick="loadPage('notifications.html', this)">🔔Notifications</a> -->
+
       </nav>
       <a href="#" class="sign-out">Sign Out</a>
     </aside>
 
     <main class="main-content">
-      <header class="header">
-        <h2>Search Marketplace</h2>
-        <div class="search-bar">
-          <input type="text" placeholder="Search for products, farmers, or locations" />
-          <button>Search</button>
-        </div>
-        <div class="tabs">
-          <button class="tab active">Products</button>
-          <button class="tab">Farmers</button>
-          <button class="tab">Urgent Sales</button>
-        </div>
-      </header>
+      <div id="dashboard-content">
+        <header class="header">
+          <h2>Search Marketplace</h2>
+          <div class="search-bar">
+            <input type="text" placeholder="Search for products, farmers, or locations" />
+            <button>Search</button>
+          </div>
+          <div class="tabs">
+            <button class="tab active" id="products-tab">Products</button>
+            <button class="tab" id="farmers-tab">Farmers</button>
+          </div>
+        </header>
 
-      <section class="product-grid">
-        <div class="product-card">
-          <div class="product-image">Product Image</div>
-          <div class="product-info">
-            <h3>Organic Tomatoes</h3>
-            <p>Kwame Organic Farms</p>
-            <p><strong>GH₵25/kg</strong> · Harvested Today</p>
+        <!-- Products Grid -->
+        <section class="product-grid">
+          <div class="product-card">
+             <img src="farmer.jpg" alt="" class="product-image" />
+            <div class="product-info">
+              <!-- Add product details here -->
+            </div>
+            <div class="product-actions">
+              <a href="#" onclick="loadPage('reserveproduct.html',this)" class="reserve">Purchase</a>
+              <button class="like">♡</button>
+            </div>
           </div>
-          <div class="product-actions">
-            <button class="reserve">Reserve</button>
-            <button class="like">♡</button>
+        </section>
+
+        <!-- Farmers Grid (hidden initially) -->
+        <section class="farmer-grid" style="display: none;">
+          <div class="farmers-wrapper">
+            <div class="farmer-card">
+              <img src="farmer.jpg" alt="" class="farmer-img" />
+              <div class="farmer-info">
+                <h2>Kwame Farms <span class="verified"></span></h2>
+                <p class="region">Eastern Region</p>
+                <p class="details">12 products</p>
+                <p class="bio">Specializes in organic farming with sustainable practices and high-quality produce.</p>
+                <div class="actions">
+                  <a href="#" onclick="loadPage('viewfarmerprofile.html',this)" class="profile-btn">View Profile</a>
+                  <span class="favorite-icon">♡</span>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="product-card">
-          <div class="product-image">Product Image</div>
-          <div class="product-info">
-            <h3>Fresh Cassava</h3>
-            <p>Akosua's Fresh Produce</p>
-            <p><strong>GH₵15/kg</strong> · Harvested Yesterday</p>
-          </div>
-          <div class="product-actions">
-            <button class="reserve">Reserve</button>
-            <a href="reserveproduct.html" class="reserve"></a>
-            <button class="like">♡</button>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product-image">Product Image</div>
-          <div class="product-info">
-            <h3>Plantain Bunch</h3>
-            <p>Kofi Natural Gardens</p>
-            <p><strong>GH₵20/bunch</strong> · Harvested Today</p>
-          </div>
-          <div class="product-actions">
-            <button class="reserve">Reserve</button>
-            <button class="like">♡</button>
-          </div>
-        </div>
-      </section>
+        </section>
+
+        <!-- Frame for dynamic pages -->
+      </div>
+      <iframe id="dashboard-frame" style="display: none;" frameborder="0"></iframe>
     </main>
   </div>
+
+  <script src="buyerdashboard.js"></script>
 </body>
 </html>
