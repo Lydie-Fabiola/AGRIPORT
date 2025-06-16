@@ -4,7 +4,21 @@ body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f5f0e6; /* soft beige */
     color: #1d3927; /* natural deep green */
-  }
+
+    background-image: url('child\ in\ farm.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+    
+  
+  
   
   .container {
     max-width: 500px;
