@@ -26,12 +26,13 @@
       <nav class="nav-links">
         <a href="#" class="nav-item active" onclick="showDashboard(this)">🔍 Search Marketplace</a>
         <a href="#" class="nav-item" onclick="loadPage('urgentsale.html', this)">⚡ Urgent Sales</a>
-        <a href="#" class="nav-item" onclick="loadPage('reserveproduct.html', this)">📅 Purchase</a>
+        <a href="#" class="nav-item" id="purchase-tab" style="display: none;" onclick="loadPage('reserveproduct.html', this)">📅 Purchase</a>
         <a href="#" class="nav-item" onclick="loadPage('purchasehistory.html', this)">🕓 Purchase History</a>
-        <a href="#" class="nav-item" onclick="loadPage('buyerchat.html', this)">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon" />
-          Chat with Farmers
-        </a>
+        <a href="#" class="nav-item" id="chat-tab" style="display: none;" onclick="loadPage('buyerchat.html', this)">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon" />
+  Chat with Farmers
+</a>
+
         <a href="#" class="nav-item" onclick="loadPage('favorite.html', this)">❤️ Favorites</a>
        <!-- <a href="#" class="nav-item" onclick="loadPage('notifications.html', this)">🔔Notifications</a> -->
 
@@ -40,7 +41,7 @@
     </aside>
 
     <main class="main-content">
-      <div id="dashboard-content">
+      <div id="dashboard-content" style="display: block;">
         <header class="header">
           <h2>Search Marketplace</h2>
           <div class="search-bar">
@@ -78,7 +79,8 @@
                 <p class="details">12 products</p>
                 <p class="bio">Specializes in organic farming with sustainable practices and high-quality produce.</p>
                 <div class="actions">
-                  <a href="#" onclick="loadPage('viewfarmerprofile.html',this)" class="profile-btn">View Profile</a>
+                  <a href="#" onclick="showFarmerTabs(); loadPage('viewfarmerprofile.html',this)" class="profile-btn">View Profile</a>
+
                   <span class="favorite-icon">♡</span>
                 </div>
               </div>

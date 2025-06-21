@@ -211,4 +211,25 @@ function setActiveLink(element) {
   document.querySelectorAll('.nav-item').forEach(link => link.classList.remove('active'));
   if (element) element.classList.add('active');
 }
+function showFarmerTabs() {
+  document.getElementById('purchase-tab').style.display = 'block';
+  document.getElementById('chat-tab').style.display = 'block';
+}
+window.addEventListener('message', function(event) {
+  if (event.data === 'goBackToSearchMarketplace') {
+    // Hide the iframe (UrgentSale or other page)
+    const iframe = document.getElementById('dashboard-frame');
+    iframe.style.display = 'none';
+    iframe.src = '';
+
+    // Show the main dashboard content (Search Marketplace section)
+    const dashboardContent = document.getElementById('dashboard-content');
+    dashboardContent.style.display = 'block';
+
+    // Optionally, activate the Products tab to mimic default
+    const productsTab = document.getElementById('products-tab');
+    if (productsTab) productsTab.click();
+  }
+});
+
 
