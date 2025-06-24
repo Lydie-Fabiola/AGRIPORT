@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - Farm2Market</title>
+    <link rel="stylesheet" href="D:\Frontend\Farmer\settings.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div>
+    <h1>sign up  as farmer</h1>
+    <button class="mobile-menu-toggle" id="mobileMenuToggle">
+        <i class="fas fa-bars"></i>
+    </button>
+    
+    <div class="dashboard">
+        <!-- Sidebar (same as dashboard) -->
+        <div class="sidebar" id="sidebar">
+            <button class="toggle-sidebar" id="toggleSidebar">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            
+            <div class="sidebar-header">
+                <h1>Farm2Market</h1>
+                <h3>Settings</h3>
+                <span class="trust-badge">Verified <i class="fas fa-check"></i></span>
+            </div>
+            
+            <ul class="nav-menu">
+                <!-- COPY YOUR EXISTING SIDEBAR MENU ITEMS HERE -->
+                <!-- Make sure the Settings link is marked as active -->
+                 <ul class="nav-menu">
+                <!-- Dashboard -->
+                <li>
+                    <a href="D:\Farm2Market App  html\Frontend\farmer dashboard.html" class="active">
+                        <i class="fas fa-home"></i>
+                        <span>Dashboard</span>
+                        <span class="tooltip">Dashboard Overview</span>
+                    </a>
+                </li>
+                
+                <!-- Product Management -->
+                <li>
+                    <a href="D:\Farm2Market App  html\Frontend\Farmer\mylisting.html">
+                        <i class="fas fa-list"></i>
+                        <span>Product Listings</span>
+                        <span class="tooltip">Manage your products</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="D:\Farm2Market App  html\Frontend\Farmer\addproduct.html">
+                        <i class="fas fa-plus-circle"></i>
+                        <span>Add New Product</span>
+                        <span class="tooltip">Create new listing</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="D:\Farm2Market App  html\Frontend\Farmer\addurgentsale.html">
+                        <i class="fas fa-plus-circle"></i>
+                        <span>Add Urgent Sales</span>
+                        <span class="tooltip">Create new listing</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="D:\Frontend\Farmer\editlisting.html">
+                        <i class="fas fa-edit"></i>
+                        <span>Edit Listings</span>
+                        <span class="tooltip">Update your products</span>
+                    </a>
+                </li>
+                
+                <!-- Sales & Transactions -->
+                <li>
+                    <a href="D:\Farm2Market App  html\Frontend\Farmer\saleconfirmation.html">
+                        <i class="fas fa-receipt"></i>
+                        <span>Sales & Receipts</span>
+                        <span class="tooltip">View sales history</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="D:\Frontend\Farmer\memebership-receipt.html">
+                        <i class="fas fa-money-bill-wave"></i>
+                        <span>Membership fee Receipts</span>
+                        <span class="tooltip">Upload payment receipts</span>
+                    </a>
+                </li>
+                
+                <!-- Farming Support -->
+                <li>
+                    <a href="D:\Farm2Market App  html\Frontend\Farmer\farmingtips.html">
+                        <i class="fas fa-lightbulb"></i>
+                        <span>Farming Tips</span>
+                        <span class="tooltip">Get expert advice</span>
+                    </a>
+                </li>
+                
+                <!-- Profile & Settings -->
+                <li>
+                    <a href="D:\Farm2Market App  html\Frontend\Farmer\farmerprofile.html">
+                        <i class="fas fa-user"></i>
+                        <span>My Profile</span>
+                        <span class="tooltip">Manage your profile</span>
+                    </a>
+                </li>
+                               
+                <!-- Settings -->
+                <li>
+                    <a href="D:\Frontend\settings.html">
+                        <i class="fas fa-cog"></i>
+                        <span>Settings</span>
+                        <span class="tooltip">App settings</span>
+                    </a>
+                </li>
+
+                <!-- About us -->
+                <li>
+                    <a href="D:\Frontend\about us.html">
+                        <i class="fas fa-bars"></i>
+                        <span>About</span>
+                        <span class="tooltip">About the application and Team menbers</span>
+                    </a>
+            </ul>
+        </div>
+
+          <!-- Add scroll controls at the bottom -->
+        <div class="sidebar-footer" style="flex-shrink: 10; padding: 15px; text-align: center; border-top: 1px solid #eee;">
+        </div>
+                <li>
+                    <a href="#" class="active">
+                        <i class="fas fa-cog"></i>
+                        <span>Settings</span>
+                        <span class="tooltip">App settings</span>
+                    </a>
+                </li>
+                <!-- Other menu items... -->
+            </ul>
+        </div>
+    </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="header">
+                <h1>Account Settings</h1>
+                <div class="notification-bell">
+                    <i class="fas fa-bell"></i>
+                    <span class="notification-badge">3</span>
+                </div>
+            </div>
+            
+            <div class="dashboard-sections">
+                <!-- Account Settings Section -->
+                <div class="section">
+                    <div class="section-header">
+                        <h2><i class="fas fa-user-cog"></i> Account Preferences</h2>
+                    </div>
+                    
+                    <form id="accountSettingsForm">
+                        <div class="form-group">
+                            <label for="language">Language</label>
+                            <select id="language" class="form-control">
+                                <option value="en" selected>English</option>
+                                <option value="fr">French</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="theme">Theme</label>
+                            <select id="theme" class="form-control">
+                                <option value="light" selected>Light</option>
+                                <option value="dark">Dark</option>
+                                <option value="system">System Default</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>
+                                <input type="checkbox" id="emailNotifications" checked>
+                                Email Notifications
+                            </label>
+                        </div>
+                        
+                        <div class="quick-actions">
+                            <button type="submit" class="quick-action-btn">
+                                <i class="fas fa-save"></i>
+                                <span>Save Changes</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- Security Section -->
+                <div class="section">
+                    <div class="section-header">
+                        <h2><i class="fas fa-shield-alt"></i> Security</h2>
+                    </div>
+                    
+                    <div class="security-options">
+                        <div class="security-item">
+                            <i class="fas fa-key"></i>
+                            <div>
+                                <h3>Change Password</h3>
+                                <p>Last changed 3 months ago</p>
+                            </div>
+                            <button class="edit-btn">Change</button>
+                        </div>
+                    
+                        <div class="security-item">
+                            <i class="fas fa-trash-alt"></i>
+                            <div>
+                                <h3>Delete Account</h3>
+                                <p>Permanently remove your account</p>
+                            </div>
+                            <button class="reject-btn">Delete</button>
+                        </div>
+                    </div>
+                </div>
+                        
+                        <div class="preference-item">
+                            <h3>Auto Sync</h3>
+                            <div class="toggle-switch">
+                                <input type="checkbox" id="autoSync" checked>
+                                <label for="autoSync"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add this CSS for the settings page -->
+
+    <!-- JavaScript (same as dashboard) -->
+    <script>
+        // COPY YOUR EXISTING JAVASCRIPT HERE
+         // Your existing toggle functionality
+       
+    </script>
+</body>
+</html>
