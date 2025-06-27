@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AGRIPORT Buyer Dashboard</title>
+  <link rel="stylesheet" href="buyerdashboard.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="welcome-box">
+      <h1>Welcome, Buyer Rosyyy! 👋</h1>
+      <p>We’re glad to see you today on AGRIPORT 🌿</p>
+    </div>
+  </header>
+
+  <div class="dashboard-container">
+    <aside class="sidebar">
+      <div class="logo-section">
+        <div class="logo-icon">🟢</div>
+        <div>
+          <h1 class="logo-text">AGRIPORT</h1>
+          <p class="subtext">Buyer Dashboard</p>
+        </div>
+      </div>
+       <div class="nav-scroll-area">
+      <nav class="nav-links">
+        <a href="#" class="nav-item active" onclick="showDashboard(this)">🔍 Search Marketplace</a>
+        <a href="#" class="nav-item" onclick="loadPage('urgentsale.html', this)">⚡ Urgent Sales</a>
+        <a href="#" class="nav-item" id="purchase-tab" style="display: none;" onclick="loadPage('reserveproduct.html', this)">📅 Purchase</a>
+        <a href="#" class="nav-item" onclick="loadPage('purchasehistory.html', this)">🕓 Purchase History</a>
+        <a href="#" class="nav-item" id="chat-tab" style="display: none;" onclick="loadPage('buyerchat.html', this)">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon" />
+  Chat with Farmers
+</a>
+
+        <a href="#" class="nav-item" onclick="loadPage('favorite.html', this)">❤️ Favorites</a>
+        <a href="#" class="nav-item" onclick="loadPage('profile.html', this)">👤 My Profile</a>
+       <!-- <a href="#" class="nav-item" onclick="loadPage('notifications.html', this)">🔔Notifications</a> -->
+
+      </nav>
+      </div>
+      <a href="#" class="sign-out logout-btn">Sign Out</a>
+    </aside>
+
+    <main class="main-content">
+      <div id="dashboard-content" >
+        <header class="header">
+          <div class="header-left">
+            <h2>Search Marketplace</h2>
+          </div>
+          <div class="header-right">
+            <div class="notification-bell" onclick="toggleNotifications()">
+              <i class="fas fa-bell"></i>
+              <span class="notification-count" id="notification-count" style="display: none;">0</span>
+            </div>
+          </div>
+          <div class="search-bar">
+            <input type="text" placeholder="Search for products, farmers, or locations" />
+            <button>Search</button>
+          </div>
+          <div class="tabs">
+            <button class="tab active" id="products-tab">Products</button>
+            <button class="tab" id="farmers-tab">Farmers</button>
+          </div>
+        </header>
+
+        <!-- Products Grid -->
+        <section class="product-grid">
+          <div class="product-card">
+             <img src="farmer.jpg" alt="" class="product-image" />
+            <div class="product-info">
+              <!-- Add product details here -->
+            </div>
+            <div class="product-actions">
+              <a href="#" onclick="loadPage('reserveproduct.html',this)" class="reserve">Purchase</a>
+              <button class="like">♡</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Farmers Grid (hidden initially) -->
+        <section class="farmer-grid" style="display: none;">
+          <div class="farmers-wrapper">
+            <div class="farmer-card">
+              <img src="farmer.jpg" alt="" class="farmer-img" />
+              <div class="farmer-info">
+                <h2>Kwame Farms <span class="verified"></span></h2>
+                <p class="region">Eastern Region</p>
+                <p class="details">12 products</p>
+                <p class="bio">Specializes in organic farming with sustainable practices and high-quality produce.</p>
+                <div class="actions">
+                  <a href="#" onclick="showFarmerTabs(); loadPage('viewfarmerprofile.html',this)" class="profile-btn">View Profile</a>
+
+                  <span class="favorite-icon">♡</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Frame for dynamic pages -->
+      </div>
+      <iframe id="dashboard-frame" style="display: none;" frameborder="0"></iframe>
+    </main>
+
+    <!-- Notification Dropdown -->
+    <div class="notification-dropdown" id="notification-dropdown" style="display: none;">
+      <div class="notification-header">
+        <h3><i class="fas fa-bell"></i> Notifications</h3>
+        <button class="mark-all-read" onclick="markAllNotificationsRead()">Mark all as read</button>
+      </div>
+      <div class="notification-list" id="notification-list">
+        <div class="no-notifications">
+          <i class="fas fa-bell-slash"></i>
+          <p>No new notifications</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/buyer-auth.js"></script>
+  <script src="buyerdashboard.js"></script>
+</body>
+</html>

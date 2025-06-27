@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Farm2Market Marketplace</title>
+<link rel="stylesheet" href="marketplace.css" />
+</head>
+<body>
+  <div class="container">
+    <form class="search-bar" onsubmit="event.preventDefault(); alert('Search feature coming soon!');">
+      <input type="text" placeholder="Search for products, farmers, or locations" />
+      <button type="submit">Search</button>
+    </form>
+
+    <div class="tabs">
+      <button class="tab-btn active" id="products-tab">Products</button>
+      <button class="tab-btn" id="farmers-tab">Farmers</button>
+    </div>
+
+    <!-- Products Section -->
+    <div class="horizontal-scroll" id="products-section">
+      <div class="product-card">
+        <img src="https://.C:\Users\PC\Documents\OBJECT ORIENTED\Frontend\assets\child in farm.jpg" alt="Organic Tomatoes" class="product-img" />
+        <div class="product-details">images
+          <div class="product-title">Organic Tomatoes</div>
+          <div class="product-farm">Kwame Organic Farms</div>
+          <div class="product-price">GHC 25/kg</div>
+          <div class="product-note">Harvested Today</div>
+          <button class="reserve-btn">Reserve</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1585238342026-98d2e4f37e6e?auto=format&fit=crop&w=90&q=80" alt="Fresh Cassava" class="product-img" />
+        <div class="product-details">
+          <div class="product-title">Fresh Cassava</div>
+          <div class="product-farm">Akosua's Fresh Produce</div>
+          <div class="product-price">GHC 15/kg</div>
+          <div class="product-note">Harvested Yesterday</div>
+          <button class="reserve-btn">Reserve</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?auto=format&fit=crop&w=90&q=80" alt="Plantain Bunch" class="product-img" />
+        <div class="product-details">
+          <div class="product-title">Plantain Bunch</div>
+          <div class="product-farm">Kofi Natural Gardens</div>
+          <div class="product-price">GHC 20/bunch</div>
+          <div class="product-note">Harvested Today</div>
+          <button class="reserve-btn">Reserve</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Farmers Section (hidden by default) -->
+    <div class="horizontal-scroll" id="farmers-section" style="display: none;">
+      <div class="farmer-card">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Kwame" class="farmer-img" />
+        <div class="farmer-details">
+          <div class="farmer-name">Kwame</div>
+          <div class="farmer-location">Central Region, Cameroon</div>
+          <div class="farmer-contact">WhatsApp: +237 699 123 456</div>
+          <button class="reserve-btn">Contact</button>
+        </div>
+      </div>
+      <div class="farmer-card">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Akosua" class="farmer-img" />
+        <div class="farmer-details">
+          <div class="farmer-name">Akosua</div>
+          <div class="farmer-location">Ashanti Region, Ghana</div>
+          <div class="farmer-contact">WhatsApp: +233 244 555 789</div>
+          <button class="reserve-btn">Contact</button>
+        </div>
+      </div>
+      <div class="farmer-card">
+        <img src="https://randomuser.me/api/portraits/men/21.jpg" alt="Kofi" class="farmer-img" />
+        <div class="farmer-details">
+          <div class="farmer-name">Kofi</div>
+          <div class="farmer-location">Western Region, Ghana</div>
+          <div class="farmer-contact">WhatsApp: +233 245 678 901</div>
+          <button class="reserve-btn">Contact</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="marketplace.js"></script>
+</body>
+</html>

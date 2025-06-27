@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Purchase History | Agriport</title>
+  <link rel="stylesheet" href="purchasehistory.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Loading indicator -->
+    <div id="loading" class="loading" style="display: none;">
+      <div class="loading-spinner">
+        <i class="fas fa-spinner fa-spin"></i>
+        <p>Loading purchase history...</p>
+      </div>
+    </div>
+
+    <!-- Summary Cards -->
+    <div class="summary-cards">
+      <div class="summary-card">
+        <div class="summary-icon">📦</div>
+        <div class="summary-info">
+          <div class="summary-number" id="total-purchases">0</div>
+          <div class="summary-label">Total Purchases</div>
+        </div>
+      </div>
+      <div class="summary-card">
+        <div class="summary-icon">⏳</div>
+        <div class="summary-info">
+          <div class="summary-number" id="pending-count">0</div>
+          <div class="summary-label">Pending</div>
+        </div>
+      </div>
+      <div class="summary-card">
+        <div class="summary-icon">✅</div>
+        <div class="summary-info">
+          <div class="summary-number" id="completed-count">0</div>
+          <div class="summary-label">Completed</div>
+        </div>
+      </div>
+      <div class="summary-card">
+        <div class="summary-icon">💰</div>
+        <div class="summary-info">
+          <div class="summary-number" id="total-spent">0 FCFA</div>
+          <div class="summary-label">Total Spent</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2>Purchase History</h2>
+
+        <!-- Filters -->
+        <div class="filters">
+          <div class="filter-group">
+            <label>Status:</label>
+            <div class="filter-buttons">
+              <button class="filter-btn active" data-filter="all">All</button>
+              <button class="filter-btn" data-filter="pending">Pending</button>
+              <button class="filter-btn" data-filter="approved">Approved</button>
+              <button class="filter-btn" data-filter="completed">Completed</button>
+              <button class="filter-btn" data-filter="rejected">Rejected</button>
+            </div>
+          </div>
+
+          <div class="filter-group">
+            <label>Date Range:</label>
+            <div class="date-filters">
+              <input type="date" id="dateFrom" placeholder="From">
+              <input type="date" id="dateTo" placeholder="To">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Date & Time</th>
+              <th>Product</th>
+              <th>Farmer</th>
+              <th>Amount</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Purchase history will be loaded here dynamically -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Pagination -->
+      <div id="pagination" class="pagination">
+        <!-- Pagination buttons will be loaded here dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="../js/buyer-auth.js"></script>
+  <script src="purchasehistory.js"></script>
+</body>
+</html>

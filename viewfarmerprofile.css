@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9fff4;
+    color: #333;
+  }
+  
+  .profile-container {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+  
+  .profile-card {
+    background-color: #f4ffe9;
+    border: 2px solid #cdeab0;
+    border-radius: 20px;
+    padding: 30px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  .farmer-img {
+    width: 300px;
+    height: 300px;
+
+    aspect-ratio: 1 / 1;          /* Ensures 1:1 ratio for circle */
+    border-radius: 50%;           /* Makes it a true circle */
+    object-fit: cover;            /* Ensures it fills the circle */
+    border: 6px solid #8DB600;    /* Apple green border */
+    margin-bottom: 20px;
+    display: block;
+  }
+  
+  .location {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+  
+  .verified {
+    color: #4CAF50;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .rating {
+    color: #ffa500;
+    margin-bottom: 16px;
+    font-size: 1rem;
+  }
+  
+  .bio {
+    font-size: 0.95rem;
+    margin: 20px 0;
+    line-height: 1.6;
+  }
+  
+  h3 {
+    color: #4b7800;
+    margin-bottom: 10px;
+  }
+  
+  .products {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .products li {
+    background-color: #eaffd6;
+    margin: 6px 0;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 0.95rem;
+  }
+  

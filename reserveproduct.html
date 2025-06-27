@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reserve Product</title>
+  <link rel="stylesheet" href="reserveproduct.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Purchase Tomatoes</h1>
+
+    <label for="quantity">Quantity</label>
+    <input type="number" id="quantity" placeholder="e.g. 1" min="1">
+
+    <label>Delivery Option</label>
+    <div class="radio-group">
+      <label><input type="radio" name="delivery" value="pickup" checked> 🛍 Pickup (No extra charge)</label>
+      <label><input type="radio" name="delivery" value="delivery"> 🚚 Delivery (FCFA 2,000 within the town)(FCFA 5000 out of Town)</label>
+    </div>
+
+    <h3>Payment Details</h3>
+    <p>Please send payment via Mobile Money (MoMo) to:</p>
+    <p><strong>Name:</strong> Pierre Farmer<br>
+       <strong>MoMo Number:</strong> 237 655 123 456</p>
+
+    <label for="momo-number">Depositor's Name</label>
+    <input type="text" id="momo-number" placeholder="e.g. Mbella Francois">
+
+    <div class="file-upload">
+        <label for="receipt-upload" style="cursor: pointer;">
+          📤 Click to upload or drag and drop<br>
+          <small>PNG, JPG or PDF (max. 5MB)</small>
+        </label>
+        <input type="file" id="receipt-upload" name="receipt" accept=".png,.jpg,.jpeg,.pdf" style="display: none;">
+      </div>
+      
+      
+
+    <label for="location">My Location</label>
+    <input type="text" id="location" placeholder="e.g. Buea, South West">
+
+    <label for="notes">Additional Notes (Optional)</label>
+    <textarea id="notes" placeholder="Any special requests or instructions for the farmer"></textarea>
+
+    <div class="price-summary">
+      <p>Subtotal: FCFA 20/kg x 1</p>
+      <p>Total: FCFA 20</p>
+    </div>
+
+    <div class="buttons">
+      <button class="cancel">Cancel</button>
+      <button class="reserve">Reserve Product</button>
+    </div>
+  </div>
+</body>
+</html>

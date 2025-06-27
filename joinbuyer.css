@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+
+  /* ✅ Use only the filename since it's in the same folder */
+  background-image: url('farmer.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+  h1 {
+    font-size: 3.7rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  text-align: center;
+  color: greenyellow;
+
+    
+  }
+  
+  p {
+    font-size: 1.2rem;
+    margin: 20px 0 40px;
+    color: #ffffff;
+    line-height: 1.5;
+    text-align: center;
+  }
+  
+  .tab-bar {
+    display: flex;
+    justify-content: center;
+    background-color: #c3e674;
+    border-radius: 10px;
+    overflow: hidden;
+    width: fit-content;
+    margin: 0 auto;
+  }
+  
+  .tab {
+    padding: 12px 30px;
+    border: none;
+    background-color: transparent;
+    color: #155724;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .tab:hover {
+    background-color: #a8db35;
+    color: white;
+  }
+  

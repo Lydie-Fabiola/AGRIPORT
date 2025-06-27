@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Join as Buyer</title>
+  <link rel="stylesheet" href="joinbuyer.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>ARE YOU A BUYER IN CAMEROON?</h1>
+    <p>
+      Join our platform today and connect directly with local farmers offering fresh, natural produce.
+      Support fair trade, eliminate middlemen, and get quality food at better prices.
+    </p>
+
+    <div class="tab-bar">
+      <button class="tab login">Login</button>
+      <button class="tab signup">Sign Up</button>
+    </div>
+  </div>
+</body>
+</html>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Get the login and signup buttons
+    const loginButton = document.querySelector('.tab.login');
+    const signupButton = document.querySelector('.tab.signup');
+    
+    // Add click event listeners
+    loginButton.addEventListener('click', function() {
+      window.location.href = 'loginbuyer.html';
+    });
+    
+    signupButton.addEventListener('click', function() {
+      window.location.href = 'signupbuyer.html';
+    });
+  });
+</script>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chat - Agriport</title>
+  <link rel="stylesheet" href="buyerchat.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div id="loading-screen" class="loading-screen">
+    <div class="loading-spinner">
+      <i class="fas fa-comments fa-spin"></i>
+      <p>Loading your conversations...</p>
+    </div>
+  </div>
+
+  <!-- Main Chat Container -->
+  <div class="chat-app" id="chat-app" style="display: none;">
+    <!-- Sidebar - Conversations List -->
+    <div class="chat-sidebar">
+      <div class="sidebar-header">
+        <div class="user-info">
+          <div class="user-avatar">
+            <i class="fas fa-user"></i>
+          </div>
+          <div class="user-details">
+            <h3 class="user-name">Buyer</h3>
+            <span class="user-status">Online</span>
+          </div>
+        </div>
+        <div class="sidebar-actions">
+          <button class="btn-new-chat" id="btn-new-chat" title="Start New Chat">
+            <i class="fas fa-plus"></i>
+          </button>
+          <button class="btn-search" id="btn-search" title="Search Conversations">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Search Bar -->
+      <div class="search-container" id="search-container" style="display: none;">
+        <div class="search-input-wrapper">
+          <i class="fas fa-search"></i>
+          <input type="text" id="search-input" placeholder="Search conversations or farmers...">
+          <button class="btn-close-search" id="btn-close-search">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Conversations List -->
+      <div class="conversations-list" id="conversations-list">
+        <!-- Conversations will be loaded here -->
+      </div>
+    </div>
+
+    <!-- Main Chat Area -->
+    <div class="chat-main">
+      <!-- Welcome Screen -->
+      <div class="chat-welcome" id="chat-welcome">
+        <div class="welcome-content">
+          <div class="welcome-icon">
+            <i class="fas fa-comments"></i>
+          </div>
+          <h2>Welcome to Agriport Chat</h2>
+          <p>Connect directly with farmers to discuss products, ask questions, and make arrangements.</p>
+          <button class="btn-start-chat" id="btn-start-first-chat">
+            <i class="fas fa-plus"></i>
+            Start Your First Chat
+          </button>
+        </div>
+      </div>
+
+      <!-- Active Chat -->
+      <div class="chat-active" id="chat-active" style="display: none;">
+        <!-- Chat Header -->
+        <div class="chat-header">
+          <div class="chat-participant">
+            <div class="participant-avatar">
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="participant-info">
+              <h3 class="participant-name" id="participant-name">Farmer Name</h3>
+              <span class="participant-status" id="participant-status">Online</span>
+            </div>
+          </div>
+          <div class="chat-actions">
+            <button class="btn-chat-info" id="btn-chat-info" title="Chat Info">
+              <i class="fas fa-info-circle"></i>
+            </button>
+            <button class="btn-close-chat" id="btn-close-chat" title="Close Chat">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Messages Area -->
+        <div class="messages-container" id="messages-container">
+          <div class="messages-list" id="messages-list">
+            <!-- Messages will be loaded here -->
+          </div>
+        </div>
+
+        <!-- Message Input -->
+        <div class="message-input-container">
+          <div class="message-input-wrapper">
+            <button class="btn-attach" id="btn-attach" title="Attach File">
+              <i class="fas fa-paperclip"></i>
+            </button>
+            <div class="input-wrapper">
+              <textarea
+                id="message-input"
+                placeholder="Type your message..."
+                rows="1"
+                maxlength="1000"
+              ></textarea>
+              <div class="input-actions">
+                <span class="char-count" id="char-count">0/1000</span>
+              </div>
+            </div>
+            <button class="btn-send" id="btn-send" title="Send Message">
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- New Chat Modal -->
+  <div class="modal-overlay" id="new-chat-modal" style="display: none;">
+    <div class="modal">
+      <div class="modal-header">
+        <h3>Start New Chat</h3>
+        <button class="btn-close-modal" id="btn-close-new-chat">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="search-users">
+          <div class="search-input-wrapper">
+            <i class="fas fa-search"></i>
+            <input type="text" id="user-search-input" placeholder="Search farmers by name or username...">
+          </div>
+        </div>
+        <div class="users-list" id="users-list">
+          <!-- Search results will appear here -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="../js/buyer-auth.js"></script>
+  <script src="buyerchat.js"></script>
+</body>
+</html>
