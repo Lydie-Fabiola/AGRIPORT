@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Farmer Management</title>
+<link rel="stylesheet" href="farmermanagement.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Farmer Management</h1>
+    <div class="search-bar">
+      <input type="text" placeholder="Search Farmers...">
+      <button>Search</button>
+    </div>
+    <button class="add-farmer-button">Add Farmer</button>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Location</th>
+          <th>Products</th>
+          <th>Status</th>
+          <th>Verification</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Mary Johnson</td>
+          <td>Farmville</td>
+          <td>15</td>
+          <td>Active</td>
+          <td>
+            <a href="/verify/maryjohnson/id" class="verify-link">Verify ID</a>
+            <a href="/verify/maryjohnson/momo" class="verify-link">Verify Momo</a>
+          </td>
+          <td><button class="verify-button">Edit</button> <button class="delete-button">Delete</button></td>
+        </tr>
+        <tr>
+          <td>Robert Smith</td>
+          <td>Green Acres</td>
+          <td>22</td>
+          <td>Active</td>
+          <td>
+            <a href="/verify/robertsmith/id" class="verify-link">Verify ID</a>
+            <a href="/verify/robertsmith/momo" class="verify-link">Verify Momo</a>
+          </td>
+          <td><button class="verify-button">Edit</button> <button class="delete-button">Delete</button></td>
+        </tr>
+        <tr>
+          <td>John Doe</td>
+          <td>Oakhaven</td>
+          <td>8</td>
+          <td>Pending</td>
+          <td>
+            <a href="/verify/johndoe/id" class="verify-link">Verify ID</a>
+            <a href="/verify/johndoe/momo" class="verify-link">Verify Momo</a>
+          </td>
+          <td><button class="verify-button">Verify</button> <button class="delete-button">Delete</button></td>
+        </tr>
+        <tr>
+          <td>Sarah Williams</td>
+          <td>Willow Creek</td>
+          <td>12</td>
+          <td>Pending</td>
+          <td>
+            <a href="/verify/sarahwilliams/id" class="verify-link">Verify ID</a>
+            <a href="/verify/sarahwilliams/momo" class="verify-link">Verify Momo</a>
+          </td>
+          <td><button class="verify-button">Verify</button> <button class="delete-button">Delete</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!-- Update navigation links in the admin section -->
+  <nav class="admin-nav">
+    <ul>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="farmermanagement.html" class="active">Farmer Management</a></li>
+      <li><a href="buyermanagement.html">Buyer Management</a></li>
+      <li><a href="ordermanagement.html">Order Management</a></li>
+      <li><a href="../index.html">Logout</a></li>
+    </ul>
+  </nav>
+</body>
+</html>

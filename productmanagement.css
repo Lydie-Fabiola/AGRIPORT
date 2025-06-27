@@ -1,0 +1,91 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f2fdf4;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  h1 {
+    color: #4CAF50; /* Apple green */
+    margin-bottom: 5px;
+  }
+  
+  p {
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  thead th {
+    background-color: #a5d6a7; /* Light apple green */
+    color: #2e7d32;
+  }
+  
+  tbody tr:hover {
+    background-color: #f1fff1;
+  }
+  
+  .approved {
+    color: #388e3c;
+    font-weight: bold;
+  }
+  
+  .pending {
+    color: #f57f17;
+    font-weight: bold;
+  }
+  
+  .flagged {
+    color: #d32f2f;
+    font-weight: bold;
+  }
+  
+  button {
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  button.approve {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  button.delete {
+    background-color: #e53935;
+    color: white;
+    margin-left: 5px;
+  }
+  
+  button.review {
+    background-color: #fbc02d;
+    color: #000;
+  }
+  
+  button.approved-label {
+    background-color: #a5d6a7;
+    color: #2e7d32;
+    cursor: default;
+  }
+  

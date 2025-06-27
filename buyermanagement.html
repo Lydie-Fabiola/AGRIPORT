@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Buyer Management</title>
+<link rel="stylesheet" href="buyermanagement.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Buyer Management</h1>
+    <div class="search-bar">
+      <input type="text" placeholder="Search Buyers...">
+      <button>Search</button>
+    </div>
+    <button class="add-buyer-button">Add New Buyer</button>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Location</th>
+          <th>Purchase</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John Atem</td>
+          <td>Efoulan</td>
+          <td>5</td>
+          <td>Active</td>
+          <td>
+            <button class="suspend-button">Suspend</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Jane Smith</td>
+          <td>Fiango</td>
+          <td>12</td>
+          <td>Active</td>
+          <td>
+            <button class="suspend-button">Suspend</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Peter Bello</td>
+          <td>Doula</td>
+          <td>2</td>
+          <td>Suspended</td>
+          <td>
+            <button class="reactivate-button">Reactivate</button>
+          </td>
+        </tr>
+        <!-- Add more rows as needed -->
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

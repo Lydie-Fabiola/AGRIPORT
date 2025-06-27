@@ -1,0 +1,101 @@
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+  }
+  
+  .container {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .verify-link {
+    background-color: #4CAF50; /* Apple Green */
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none; /* Remove underlines */
+    border-radius: 4px;
+    margin-right: 5px;
+    display: inline-block; /* Makes links behave like buttons */
+  }
+  
+  h1 {
+    color: #4CAF50;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .search-bar input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    width: 200px;
+  }
+  
+  .search-bar button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+  }
+  
+  .add-farmer-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    display: block; /* Makes button take full width */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .verify-button{
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  
+  .delete-button{
+      background-color: #f44336; /* Red for delete */
+      color: white;
+      padding: 5px 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-right: 5px;
+  }

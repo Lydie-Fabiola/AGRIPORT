@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4fdf4;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #8DB600;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .subtitle {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  th {
+    background-color: #8DB600;
+    color: white;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  tr:hover {
+    background-color: #f1fff1;
+  }
+  
+  .status {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: center;
+    width: fit-content;
+    display: inline-block;
+  }
+  
+  .completed {
+    background-color: #c8e6c9;
+    color: #2e7d32;
+  }
+  
+  .processing {
+    background-color: #fff9c4;
+    color: #f57f17;
+  }
+  
+  .refunded {
+    background-color: #ffcdd2;
+    color: #c62828;
+  }
+  
