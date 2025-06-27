@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Buyer Portal Login</title>
   <link rel="stylesheet" href="loginbuyer.css">
 </head>
@@ -12,23 +13,31 @@
     
     <div class="login-box">
       <h2>Login</h2>
-      <form>
+      <form id="buyerLoginForm" novalidate>
         <div class="input-group">
           <span class="icon">👤</span>
-          <input type="text" placeholder="Username" required>
+          <input type="text" id="username" placeholder="Username or Email" required>
         </div>
+        <div class="error-message" id="usernameError"></div>
+        
         <div class="input-group">
           <span class="icon">🔒</span>
-          <input type="password" placeholder="Password" required>
-          <span class="toggle-password"></span>
+          <input type="password" id="password" placeholder="Password" required>
+          <span class="toggle-password" id="togglePassword">👁️</span>
         </div>
+        <div class="error-message" id="passwordError"></div>
+        
         <button type="submit" class="login-btn">Sign In</button>
       </form>
       <div class="links">
-        <a href="#">Forgot your password?</a>
-        <p>Need to login as a farmer? <a href="#">Farmer Login</a></p>
+        <a href="forgot-password.html">Forgot your password?</a>
+        <p>Need to login as a farmer? <a href="../Farmer/loginfarmer.html">Farmer Login</a></p>
       </div>
+      <p class="signup-link">Don't have an account? <a href="signupbuyer.html">Register here</a></p>
     </div>
   </div>
+  
+  <script src="../js/buyer-auth.js"></script>
+  <script src="loginbuyer.js"></script>
 </body>
 </html>

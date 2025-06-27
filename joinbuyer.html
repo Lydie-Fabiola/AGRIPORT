@@ -21,3 +21,19 @@
   </div>
 </body>
 </html>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Get the login and signup buttons
+    const loginButton = document.querySelector('.tab.login');
+    const signupButton = document.querySelector('.tab.signup');
+    
+    // Add click event listeners
+    loginButton.addEventListener('click', function() {
+      window.location.href = 'loginbuyer.html';
+    });
+    
+    signupButton.addEventListener('click', function() {
+      window.location.href = 'signupbuyer.html';
+    });
+  });
+</script>

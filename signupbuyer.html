@@ -10,22 +10,55 @@
   <div class="container">
     <h1>Sign Up as a Buyer</h1>
 
-    <form onsubmit="event.preventDefault(); location.href='congratsbuyer.html';">
+    <form id="buyerSignupForm" novalidate>
       <h2>Personal Info</h2>
 
       <div class="row-group">
-        <input type="text" class="form-input" placeholder="First Name" required />
-        <input type="text" class="form-input" placeholder="Last Name" required />
+        <div class="input-container">
+          <input type="text" id="firstName" class="form-input" placeholder="First Name" required />
+          <span class="error-message" id="firstNameError"></span>
+        </div>
+        <div class="input-container">
+          <input type="text" id="lastName" class="form-input" placeholder="Last Name" required />
+          <span class="error-message" id="lastNameError"></span>
+        </div>
       </div>
 
-      <input type="tel" class="form-input" placeholder="Phone Number" pattern="^\d{9,}$" required title="Phone number must be at least 9 digits" />
-      <input type="email" class="form-input" placeholder="Email Address" required />
-      <input type="text" class="form-input" placeholder="Location / City" required />
+      <div class="input-container">
+        <input type="tel" id="phoneNumber" class="form-input" placeholder="Phone Number (e.g., 237 6XX XXX XXX)" required />
+        <span class="error-message" id="phoneNumberError"></span>
+      </div>
+      
+      <div class="input-container">
+        <input type="email" id="email" class="form-input" placeholder="Email Address" required />
+        <span class="error-message" id="emailError"></span>
+      </div>
+      
+      <div class="input-container">
+        <input type="text" id="location" class="form-input" placeholder="Location / City" required />
+        <span class="error-message" id="locationError"></span>
+      </div>
+
+      <div class="info-message">
+        <p>A secure password will be generated and sent to your email after registration.</p>
+      </div>
+
+      <div class="form-group">
+        <label>
+          <input type="checkbox" id="termsAgreement" required>
+          I agree to the <a href="../privacy-policy.html" target="_blank">Privacy Policy</a> and <a href="../terms-of-service.html" target="_blank">Terms of Service</a>
+        </label>
+        <span class="error-message" id="termsError"></span>
+      </div>
 
       <button type="submit" class="submit-btn">Create Buyer Account</button>
 
-      <p class="note">You’ll receive a confirmation once your account is created.</p>
+      <p class="note">You'll receive a confirmation email with your login credentials once your account is created.</p>
+      <p class="login-link">Already have an account? <a href="loginbuyer.html">Login here</a></p>
     </form>
   </div>
+
+  <script src="../js/buyer-auth.js"></script>
+  <script src="signupbuyer.js"></script>
 </body>
 </html>

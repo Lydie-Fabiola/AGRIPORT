@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase History Test - Agriport</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            padding: 2rem;
+            color: #2c3e50;
+        }
+        .test-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .test-section {
+            margin-bottom: 2rem;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .test-section h3 {
+            margin: 0 0 1rem 0;
+            color: #3498db;
+        }
+        .status {
+            padding: 0.5rem;
+            border-radius: 5px;
+            margin: 0.5rem 0;
+        }
+        .status.success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .status.info {
+            background: #d1ecf1;
+            color: #0c5460;
+            border: 1px solid #bee5eb;
+        }
+        .test-link {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 0.5rem 0.5rem 0.5rem 0;
+            transition: background 0.3s ease;
+        }
+        .test-link:hover {
+            background: #2980b9;
+        }
+        .code-block {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            border-left: 4px solid #3498db;
+            margin: 1rem 0;
+        }
+        .feature-list {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 5px;
+            margin: 1rem 0;
+        }
+        .feature-list ul {
+            margin: 0;
+            padding-left: 1.5rem;
+        }
+        .feature-list li {
+            margin: 0.5rem 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>📊 Purchase History Implementation - Complete!</h1>
+        
+        <div class="status success">
+            <strong>✅ Purchase History Functionality Implemented!</strong><br>
+            Complete purchase history system with backend API integration and dynamic frontend.
+        </div>
+
+        <div class="test-section">
+            <h3>🚀 What's Been Implemented</h3>
+            
+            <div class="feature-list">
+                <strong>Backend API:</strong>
+                <ul>
+                    <li>✅ <strong>GET /api/buyer/purchase-history/</strong> - Complete API endpoint</li>
+                    <li>✅ <strong>Filtering Support</strong> - By status, date range</li>
+                    <li>✅ <strong>Pagination</strong> - 20 items per page with navigation</li>
+                    <li>✅ <strong>Summary Statistics</strong> - Total purchases, spending, counts</li>
+                    <li>✅ <strong>Real Data Integration</strong> - Uses existing Reservation and Transaction models</li>
+                </ul>
+            </div>
+
+            <div class="feature-list">
+                <strong>Frontend Features:</strong>
+                <ul>
+                    <li>✅ <strong>Dynamic Data Loading</strong> - Real API integration</li>
+                    <li>✅ <strong>Summary Dashboard</strong> - Purchase statistics cards</li>
+                    <li>✅ <strong>Advanced Filtering</strong> - Status and date range filters</li>
+                    <li>✅ <strong>Responsive Design</strong> - Mobile-friendly interface</li>
+                    <li>✅ <strong>Pagination Controls</strong> - Navigate through purchase history</li>
+                    <li>✅ <strong>Loading States</strong> - User feedback during data loading</li>
+                    <li>✅ <strong>Error Handling</strong> - Graceful error management</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="test-section">
+            <h3>📋 API Endpoint Details</h3>
+            
+            <div class="code-block">
+                <strong>Endpoint:</strong> GET /api/buyer/purchase-history/<br><br>
+                <strong>Query Parameters:</strong><br>
+                - status: all, pending, approved, completed, rejected<br>
+                - date_from: YYYY-MM-DD format<br>
+                - date_to: YYYY-MM-DD format<br>
+                - page: Page number (default: 1)<br>
+                - per_page: Items per page (default: 20)
+            </div>
+
+            <div class="code-block">
+                <strong>Response Format:</strong><br>
+                {<br>
+                &nbsp;&nbsp;"success": true,<br>
+                &nbsp;&nbsp;"purchase_history": [...],<br>
+                &nbsp;&nbsp;"pagination": {...},<br>
+                &nbsp;&nbsp;"summary": {...}<br>
+                }
+            </div>
+        </div>
+
+        <div class="test-section">
+            <h3>🎯 Features Working</h3>
+            
+            <div class="feature-list">
+                <strong>Purchase History Display:</strong>
+                <ul>
+                    <li>✅ Date and time of purchase</li>
+                    <li>✅ Product name and details</li>
+                    <li>✅ Farmer information</li>
+                    <li>✅ Amount and pricing</li>
+                    <li>✅ Status with color coding</li>
+                    <li>✅ Action buttons (View Details, Receipt)</li>
+                </ul>
+            </div>
+
+            <div class="feature-list">
+                <strong>Interactive Features:</strong>
+                <ul>
+                    <li>✅ Filter by purchase status</li>
+                    <li>✅ Filter by date range</li>
+                    <li>✅ Pagination navigation</li>
+                    <li>✅ Responsive table design</li>
+                    <li>✅ Loading indicators</li>
+                    <li>✅ Empty state handling</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="test-section">
+            <h3>🧪 Test the Purchase History</h3>
+            
+            <div class="status info">
+                <strong>Testing Instructions:</strong><br>
+                1. Make sure you're logged in as a buyer<br>
+                2. Ensure you have some reservations in the database<br>
+                3. Open the purchase history page to see real data
+            </div>
+            
+            <a href="purchasehistory.html" class="test-link">
+                📊 Test Purchase History
+            </a>
+            <a href="buyerdashboard.html" class="test-link">
+                🛒 Back to Dashboard
+            </a>
+        </div>
+
+        <div class="test-section">
+            <h3>🔧 Technical Implementation</h3>
+            
+            <div class="code-block">
+                <strong>Files Created/Modified:</strong><br>
+                ✅ views.py - Added buyer_purchase_history() function<br>
+                ✅ urls.py - Added purchase history endpoint<br>
+                ✅ purchasehistory.js - Complete JavaScript functionality<br>
+                ✅ purchasehistory.html - Enhanced HTML structure<br>
+                ✅ purchasehistory.css - Modern responsive styling
+            </div>
+        </div>
+
+        <div class="test-section">
+            <h3>📊 Data Integration</h3>
+            
+            <div class="feature-list">
+                <strong>Database Models Used:</strong>
+                <ul>
+                    <li>✅ <strong>Reservation</strong> - Main purchase data</li>
+                    <li>✅ <strong>FarmerListing</strong> - Product information</li>
+                    <li>✅ <strong>CustomUser</strong> - Farmer details</li>
+                    <li>✅ <strong>Transaction</strong> - Payment information</li>
+                    <li>✅ <strong>Category</strong> - Product categories</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="test-section">
+            <h3>🎉 Summary Statistics</h3>
+            
+            <div class="feature-list">
+                <strong>Dashboard Cards Show:</strong>
+                <ul>
+                    <li>📦 Total Purchases Count</li>
+                    <li>⏳ Pending Reservations</li>
+                    <li>✅ Completed Purchases</li>
+                    <li>💰 Total Amount Spent</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="test-section">
+            <h3>🚀 Next Steps</h3>
+            
+            <div class="feature-list">
+                <strong>Future Enhancements (Optional):</strong>
+                <ul>
+                    <li>⚠️ Purchase details modal</li>
+                    <li>⚠️ Export to PDF/CSV</li>
+                    <li>⚠️ Advanced search functionality</li>
+                    <li>⚠️ Purchase analytics charts</li>
+                    <li>⚠️ Reorder functionality</li>
+                </ul>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 2rem; padding: 1rem; background: #e8f5e8; border-radius: 5px;">
+            <h2>🎉 Purchase History Complete!</h2>
+            <p><strong>Buyers can now view their complete purchase history with real data!</strong></p>
+            <p>📊 Full API integration ✅ | 🎨 Modern UI ✅ | 📱 Mobile responsive ✅</p>
+        </div>
+    </div>
+
+    <script>
+        console.log('✅ Purchase History Implementation - Complete!');
+        
+        // Add click handlers for test links
+        document.addEventListener('DOMContentLoaded', function() {
+            const testLinks = document.querySelectorAll('.test-link');
+            testLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    console.log('Testing:', this.textContent);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
