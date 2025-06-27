@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login - Agriport</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="admin_login_styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo">
+            <h1><i class="fas fa-seedling"></i> Agriport</h1>
+            <p>Agricultural Management System</p>
+        </div>
+
+        <div class="admin-badge">
+            <i class="fas fa-shield-alt"></i> Administrator Access
+        </div>
+
+        <div class="security-notice">
+            <i class="fas fa-exclamation-triangle"></i>
+            This is a secure admin area. Only authorized personnel should access this system.
+        </div>
+
+        <form id="adminLoginForm">
+            <div class="alert" id="alertMessage"></div>
+
+            <div class="form-group">
+                <label for="email">
+                    <i class="fas fa-envelope"></i> Admin Email
+                </label>
+                <input type="email" id="email" name="email" required 
+                       placeholder="Enter your admin email">
+            </div>
+
+            <div class="form-group">
+                <label for="password">
+                    <i class="fas fa-lock"></i> Password
+                </label>
+                <input type="password" id="password" name="password" required 
+                       placeholder="Enter your password">
+            </div>
+
+            <button type="submit" class="login-btn" id="loginBtn">
+                <i class="fas fa-sign-in-alt"></i> Login to Admin Panel
+            </button>
+
+            <div class="loading" id="loading">
+                <i class="fas fa-spinner"></i> Authenticating...
+            </div>
+        </form>
+
+        <div class="footer">
+            <p>&copy; 2025 Agriport. All rights reserved.</p>
+            <p>Secure Admin Portal v1.0</p>
+        </div>
+    </div>
+
+    <script src="admin_login_script.js"></script>
+</body>
+</html>

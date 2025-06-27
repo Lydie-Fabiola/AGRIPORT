@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin - Product Management | Farm2Market</title>
+  <link rel="stylesheet" href="productmanagement.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Product Listings</h1>
+    <p>Approve new listings and manage flagged items.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Farmer</th>
+          <th>Price</th>
+          <th>Status</th>
+          <th>Flagged</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Organic Tomatoes</td>
+          <td>John Doe</td>
+          <td>$2.50/kg</td>
+          <td class="pending">Pending</td>
+          <td>No issues</td>
+          <td>
+            <button class="approve">✓</button>
+            <button class="delete">✗</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Fresh Cassava</td>
+          <td>Mary Johnson</td>
+          <td>$1.80/kg</td>
+          <td class="approved">Approved</td>
+          <td>No issues</td>
+          <td>
+            <button class="approved-label">Approved</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Plantain Bunch</td>
+          <td>Robert Smith</td>
+          <td>$3.20/bunch</td>
+          <td class="approved">Approved</td>
+          <td class="flagged">Flagged</td>
+          <td>
+            <button class="review">Review</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Organic Peppers</td>
+          <td>Sarah Williams</td>
+          <td>$4.00/kg</td>
+          <td class="pending">Pending</td>
+          <td>No issues</td>
+          <td>
+            <button class="approve">✓</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Cocoyam</td>
+          <td>David Brown</td>
+          <td>$2.10/kg</td>
+          <td class="approved">Approved</td>
+          <td class="flagged">Flagged</td>
+          <td>
+            <button class="review">Review</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
